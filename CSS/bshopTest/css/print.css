@@ -1,0 +1,76 @@
+#hosting h3,
+#security h3,
+#payment h3 {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #eb8575;
+    margin: 0 0 10px 80px;
+}
+
+#hosting p,
+#security p,
+#payment p {
+    font-family: Arial;
+    font-size: 12px;
+    color: #eb11ad;
+    margin: 0 0 10px 80px;
+}
+
+#hosting {
+    background-image: url(../Images/icon1.png);
+    background-repeat: no-repeat;
+    background-position: left 15px;
+    border-right: 2px solid #ccc;
+
+}
+
+#security {
+    background-image: url(../Images/icon2.png);
+    background-repeat: no-repeat;
+    background-position: left 15px;
+    border-right: 2px solid #ccc;
+    margin-left: 13.5px;
+
+}
+
+#payment {
+    background-image: url(../Images/icon3.png);
+    background-repeat: no-repeat;
+    background-position: left 15px;
+    margin-left: 13.5px;
+
+
+}
+
+#sec_news,
+#news_notice {
+    width: 420px;
+    float: left;
+    margin: 10px 0 0 20px;
+    font-family: Arial;
+    color: #333;
+
+
+}
+
+#sec_news h3,
+#news_notice h3 {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    width: 420px;
+    height: 24px;
+    background-image: url(../Images/h3_back.jpg);
+    background-repeat: no-repeat;
+    padding: 5px 0 0 22px;
+    
+}
+
+#sec_news .orange{
+color: #f26522
+}
+#news_notice .brown{
+    color: #827b00;
+    

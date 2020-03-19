@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>switch</title>
+    <script>
+        function funGrade() {
+//            alert("신호");
+            var grade=prompt("성적입력","A~D입력");
+            var msg="";
+            switch(grade){
+                case 'A':
+                    msg="Goooooood";
+                    break;
+                case 'B':
+                    msg="Gooood";
+                    break;
+                case 'C':
+                    msg="Good";
+                    break;
+                default:
+                    msg="노~~~력 필요";
+                    break;
+            }
+            alert(msg);      
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="funGrade();">버튼</button>
+
+</body>
+
+</html>

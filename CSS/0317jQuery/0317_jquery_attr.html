@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attribute</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    var nave=$("#22").attr("src");
+        alert(nave);
+        $("#22").attr("src","../Image/apple.png");
+        
+    });
+    });
+    </script>
+</head>
+<body>
+    <img src="../Image/22.png" Id="22">
+    <button>attr()</button>
+</body>
+</html>

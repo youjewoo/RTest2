@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+   요소의 위치지정
+   top,bottom,left,right 사용
+   정적위치설정
+   상대위치설정
+   절대위치설정
+   고정위치설정
+-->
+ <style>
+     #one{
+         background-color: cyan;
+         width: 200px;
+         height: 50px;
+     }
+     #two{
+         position: relative;
+/*       정상적인위치에서 상대적으로 요소가 배치되는 방법    
+         */
+         left: 30px;
+         top: 50px;
+         background-color: yellow;
+         width: 200px;
+         height: 50px;
+     }
+     #three{
+         background-color: lightgreen;
+         width: 200px;
+         height: 50px;
+     }
+    
+    </style>
+  <p id="one">block #1</p>
+    <div id="two">
+       block #2<br>
+       postion :static; <br>
+   </div> 
+   <p id="three">block #3</p> 
+</body>
+</html>

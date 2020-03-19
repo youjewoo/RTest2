@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>group 사용 예제</title>
+    <style>
+        p,h3,h4{
+            font-family: sans-serif;
+            color: red;
+            
+        }
+    </style>
+    <style>
+        body em{
+            color: red;
+            
+        }
+    </style>
+    <style>
+        body>h1{
+            color: blue;
+              }
+/*
+        s1 s2: s1요소에 포함된 s2요소를 선택(후손관계)
+                s1>s2: s1요소의 직계자식 요소인 s2선택(자식거ㅘㄴ게)
+*/
+    </style>
+    
+  
+</head>
+<body>
+   
+   <h3>group</h3>
+   <h3>This is a heading</h3>
+    <h4>This is a heading</h4>
+     <p>This is a heading</p>
+    <hr>
+    <h3>자손 자식 관계</h3>
+    
+      <h1>This  a heading  <em>very</em> important</h1>
+     
+     <span>
+         <h1>This  a heading  <em>very</em> important</h1>
+     </span>
+     
+     <h3>Link</h3>
+    
+    <style>
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            background-color: red;
+            
+/*            red;*/
+        }
+               </style>
+               <a href="www.google.co.kr">google</a>
+</body>
+</html>

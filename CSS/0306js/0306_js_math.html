@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+</head>
+<body>
+    <script>
+        function calc(type){
+        x=Number(document.cal.number1.value);
+        if(type==1)
+            y=Math.sin((x*Math.PI)/180);
+           
+        else if(type==2)
+            y=Math.log(x);
+       
+        else if(type==3)
+            y=Math.sqrt(x);
+        else if(type==4)
+            y=Math.abs(x);
+        
+         document.cal.total.value=y;
+      }
+    </script>
+    
+<!-- 공학 계산기?
+   
+    acos, asin, atan
+    ceil floor 
+    cos sin tan
+    exp
+    log
+    max
+    min
+    pow
+    random
+    round
+    sqrt
+    
+-->
+    
+    <form action="#" name="cal">
+        입력 : <input type="text" name="number1" /><br>
+        실행결과 : <input type="text" name="total" /><br>
+        <input type="button" value="SIN" onclick="calc(1);">
+        <input type="button" value="LOG" onclick="calc(2);">
+        <input type="button" value="SQRT" onclick="calc(3);">
+        <input type="button" value="ABS" onclick="calc(4);">
+        
+    </form>
+</body>
+</html>

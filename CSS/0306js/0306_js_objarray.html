@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>obj Array</title>
+</head>
+<body>
+    <script>
+    function printArray(a){
+    document.write("[");
+        for(var i=0; i<a.length; i++){
+            document.write(a[i]+" ");
+            
+        }
+        document.write("]"+"<br>");
+    }
+        
+        var myArray1=new Array();
+        myArray1[0]='apple1';
+        myArray1[1]='apple2';
+        myArray1[2]='apple3';
+        var myArray2=new Array("banana1","banana2","banana3");
+        
+        var myArray3=["banana1","banana2","banana3"];
+        
+    printArray(myArray1);    
+        printArray(myArray2);
+         printArray(myArray3);
+        
+    </script>
+</body>
+</html>

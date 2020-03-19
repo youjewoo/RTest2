@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>익명함수</title>
+</head>
+
+<body>
+    <!--
+    <script>
+    일반함수
+        function sum(a,b){
+        var m=a+b;
+            return m;
+        }
+        var sumans=sum(1,2);
+        
+    </script>
+    
+-->
+   
+<!--
+    <script>
+   무명(익명함수)함수
+        function sum(a,b){
+        var m=a+b;
+            return m;
+        }
+        var sumans=sum(1,2);
+        alert(sumans);
+    </script>
+-->
+    <script>
+        //    즉시 실행 함수
+        var sum = function sum(a, b) {
+            var m = a + b;
+            return m;
+        }(100,200);
+        alert(sum);
+    </script>
+</body></html>

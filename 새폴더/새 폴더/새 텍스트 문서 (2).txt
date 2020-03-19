@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+<h1>ÀÌ·Â¼­</h1>
+<table border="1">
+		<tr>
+		<td width="50">dd</td>
+		<td width="150">dd</td>
+		</tr>
+		<tr>
+		<td width="150">dd</td>
+		<td width="50">dd</td>
+		</tr>
+</table>
+</body>
+</html>

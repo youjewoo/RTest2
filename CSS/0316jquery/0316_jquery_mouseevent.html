@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery MouseEvent</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    
+</head>
+<body>
+
+<style>
+    div.out{
+    width: 200px;
+        height: 60px;
+        background-color: yellow;
+        
+    }
+    </style>
+    <script>
+        
+//        마우스이벤트
+//        mouseover 마우스를움직일떄마다
+//        ,mouseenter 픽셀안에 마우스가 들어올떄
+//        ,mouseleave, 필셀안에 마우스가 빠져나올떄
+//            mousedown 픽셀안에 마우스가 눌려졌을떄
+//            ,mouseup 마우스를 떼졋을때
+    var i=0;
+        $(document).ready(function(){
+        $("div.out").mouseup(function(){
+        $("p:last",this).text(++i);
+            
+        });
+        });
+    </script>
+<div class="out" >
+    <p>마우스를 움직이세요</p>
+    <p>0</p>
+    
+</div>
+
+</body>
+</html>

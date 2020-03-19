@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    요소의 위치지정
+    top,bottom,letf,right 사용
+    정적위치 설정
+    현재위치 설정
+    절대위치 설정
+    고정위치 설정
+-->
+<style>
+    #one{
+    background-color: cyan;
+    width: 200px;
+        height: 50px;
+        
+    }
+      #two{
+          position: absolute;
+/*     전체 페이지를 기준으로 위치 */
+          
+          left: 30px;
+        top: 30px;
+          background-color: yellow;
+    width: 200px;
+        height: 50px;
+        
+    }
+      #three{
+    background-color: lightgreen;
+    width: 200px;
+        height: 50px;
+        
+    }
+    </style>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br>
+        postion :static;<br>
+    </div>
+    <p id="three">block #3</p>
+    
+</body>
+</html>

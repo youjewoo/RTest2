@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getEle</title>
+    <script>
+        function calc(){
+            alert("불렀시유!!!!!")
+            var x=document.getElementById("x").value;
+            var y=document.getElementById("y").value;
+            var sum;
+            sum=parseInt(x)+parseInt(y);
+//            document.write(sum);
+            document.getElementById("sum").value=sum;   
+        }  
+    </script>   
+</head>
+<body>
+  <h3>덧셈계산기</h3>  
+    <form action="#">
+        정수1 : <input type="text" id="x" /><br>
+        정수2 : <input type="text" id="y" /><br>
+        합계 : <input type="text" id="sum" /><br>
+        <input type="button" value="계산" onclick="calc();" />
+        
+    </form>
+</body>
+</html>

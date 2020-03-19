@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg08</title>
+    
+    <script>
+    function regEx(){
+//    alert("신호");
+        var re=/[C-Ka-d2-6]/g;
+        var str="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789";
+        var newstr=str.match(re);
+        
+        alert(newstr);
+    
+    }
+        
+    </script>
+</head>
+<body>
+    <button onclick="regEx();">click</button>
+</body>
+</html>

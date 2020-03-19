@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>score</title>
+      <script >
+      
+          function funscore(){
+                                   var x,y
+    var msg="";
+    var score;
+          
+        x=prompt("x 정수입력바랍니다.");
+        x=parseInt(x);
+        y=prompt("y정수입력바랍니다.");
+        y=parseInt(y);
+          
+  score=parseInt(x)+parseInt(y);
+          
+          document.getElementById("score");
+          
+          alert(score);
+              
+              if(score>=90)
+                  msg="A";
+              else if(score>=80)
+                  msg="B";
+              else if(score>=60)
+                  msg="C";
+              else
+                  msg="D";
+              
+              switch(msg){
+                case'A':
+                      alert("잘했어요");
+                      break;
+                      
+                case'B':
+                      alert("보통");
+                      break;
+                      
+                case'C':
+                      alert("노력");
+                      break;
+                      
+                case'D':
+                      alert("더노력");
+                      break;
+                      
+                  default:
+                      alert("aaa");
+                      break;
+                      
+              }
+              alert(msg);
+        }
+        
+    </script>
+
+</head>
+<body>
+  
+   <button id="score"  onclick="funscore();">score</button>
+    
+</body>
+</html>

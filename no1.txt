@@ -1,0 +1,14 @@
+<div id="solution">
+                <div id="hosting">
+                    <h3>Web Hosting Solution</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam error ipsa commodi exercitationem fugiat praesentium tempore inventore voluptate dolore. Ipsa quisquam nemo enim explicabo aut accusantium ex ab perspiciatis.</p>
+                </div>
+                <div id="security">
+                    <h3>Web Security Solution</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam error ipsa commodi exercitationem fugiat praesentium tempore inventore voluptate dolore. Ipsa quisquam nemo enim explicabo aut accusantium ex ab perspiciatis.</p>
+                </div>
+                <div id="payment">
+                    <h3>Web payment Solution</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nam error ipsa commodi exercitationem fugiat praesentium tempore inventore voluptate dolore. Ipsa quisquam nemo enim explicabo aut accusantium ex ab perspiciatis.</p>
+                </div>
+            </div>

@@ -1,0 +1,30 @@
+body{
+   background-color: yellow;
+    font-family: serif;
+    color: black;
+}
+h1{
+    border-bottom: 1px solid gray;
+    color: red;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #eeeeee;
+}
+p.first{
+    color: green;
+/*    background-color: red;*/
+/*    background-color: #ff00ff;*/
+/*    background-color: #f0f;*/
+/*    background-color: rgb(255,0,0);*/
+    background-color: rgb(100%,50%,0%);
+
+    font-size: 20px;
+    font-family: '나눔고딕','궁서','Nanum Gothic','맑은고딕','Malgun Gothic','돋움';
+}
+p.second{
+    color: blue;
+    font-weight: bold;
+    text-align:center;
+}

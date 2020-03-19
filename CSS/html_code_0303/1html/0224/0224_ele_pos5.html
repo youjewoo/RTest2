@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+   요소의 위치지정
+   top,bottom,left,right 사용
+   정적위치설정
+   상대위치설정
+   절대위치설정
+   고정위치설정
+-->
+
+<style>
+    p{
+        background-color: lightgreen;
+        width: 200px;
+        height: 50px;
+    }
+    #two{
+        background-color: yellow;
+        position: fixed;    
+/*        화면이 스클롤 되어도 위치가 고정*/
+        top: 0px;
+        right: 20px;
+    }
+    
+    </style>
+ <p>block #01</p>
+ <p id="two">block #02
+ pos : fixed <br>
+ </p>
+ <p>block #03</p>
+ <p>block #04</p>
+ <p>block #05</p>
+ <p>block #06</p>
+ <p>block #07</p>
+ <p>block #08</p>
+ <p>block #09</p>
+ <p>block #10</p>
+ <p>block #11</p>
+</body>
+</html>

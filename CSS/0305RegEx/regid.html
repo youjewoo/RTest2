@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regid</title>
+    
+    <script>
+    function regEx(){
+//    alert("신호");
+        var re=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/g;
+        var str="abcde33";
+        var newstr=str.match(re);
+        
+        alert(newstr);
+    
+    }
+        
+    </script>
+</head>
+<body>
+    <button onclick="regEx();">click</button>
+</body>
+</html>

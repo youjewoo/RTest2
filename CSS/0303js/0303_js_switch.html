@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>suitch</title>
+    <script>
+    function funGrade(){
+//        alert("신호");
+        var grade=prompt("성적입력","A~D");
+        var msg="";
+        
+        switch(grade){
+            case 'A':
+            msg="A";
+            break;
+                
+            case 'B':
+            msg="B";
+            break;
+                
+            case 'C':
+            msg="C";
+            break;
+            default:
+                msg="D 등 급 이 네?";
+            break;
+        }
+            
+     alert(msg);
+    }
+    </script>
+
+
+</head>
+<body>
+    <button onclick="funGrade();">버튼</button>
+</body>
+</html>

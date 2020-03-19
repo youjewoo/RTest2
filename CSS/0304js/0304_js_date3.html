@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date3</title>
+</head>
+
+<body>
+   <div id="remaining"></div>
+    <script>
+        // 새해가 될때까지 현재부터 남은시간
+
+        //            alert(Math.ceil(10,12));
+        function newYear() {
+            var now = new Date();
+            var newY = new Date("January 1," + (now.getFullYear() + 1));
+            var diff = newY - now;
+            var milliseconds = Math.floor(diff % 1000); //나머지 밀리숫자구하기
+            diff = diff / 1000;
+            var seconds = Math.floor(diff % 60); // 분에대한 나머지초?
+            diff = diff / 60;
+            var minutes = Math.floor(diff % 60); //시간에 대한 나머지분
+            diff=diff/60;
+            var hours = Math.floor(diff % 24); //날짜에 대한나머지시간
+            diff=diff/24;
+            var days=Math.floor(diff);
+            
+     var outstr="내년 신정까지 남은시간 : "+days+"일"+hours+"시간"+
+         minutes+"분"+seconds+"초남았습니다.";
+
+            document.getElementById("remaining").innerHTML=outstr;
+          setTimeout("newYear()",1000);
+            
+//            alert(now.getFullYear());
+        }
+        
+        
+        newYear();
+    </script>
+    
+</body></html>

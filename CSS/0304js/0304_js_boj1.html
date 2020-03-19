@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>obj1</title>
+</head>
+<body>
+   
+    <script>
+        var model;
+    function Car(model,speed,color){
+    this.model=model;
+    this.speed=speed;
+    this.color=color;
+    this.break=function(){
+        this.speed-=10; //스피드 감소
+    }
+    this.accel=function(){
+        this.speed+=10; //스피드 증가
+    }
+ }
+    myCar=new Car("520d",60,"red");
+//        alert(typeof myCar);
+        document.write("모델 : "+myCar.model+" 속도 : "+myCar.speed
+                      +"색상 : "+myCar.color+"<br>");
+        myCar.break();
+        
+        document.write("모델 : "+myCar.model+" 속도 : "+myCar.speed
+                      +"색상 : "+myCar.color+"<br>");
+        myCar.accel();
+        myCar.accel();
+         document.write("모델 : "+myCar.model+" 속도 : "+myCar.speed
+                      +"색상 : "+myCar.color+"<br>");
+//        기존객체에 속성과 메소드 추가
+        myCar.flag=true;
+        myCar.showModel=function(){
+        alert("모델 : "+this.model+" 속도 : "+this.speed+"색상 : "+this.color+"<br>")
+        }
+        myCar.showModel();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>guess</title>
+    <script>
+        //        var comNumber = 53;
+        var comNumber=parseInt(Math.random(1)*100);
+        
+        
+        var nGuesses = 0;
+
+        function guess() {
+            alert(comNumber);
+            //        alert("신호");
+            var result = "";
+            var number = parseInt(document.getElementById("user").value);
+            nGuesses++;
+            if (number == comNumber)
+                result = "성공";
+            else if (number < comNumber)
+                result = "낮습니다.";
+            else
+                result = "높습니다.";
+
+            document.getElementById("result").value = result;
+            document.getElementById("guesses").value = nGuesses;
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>숫자맞추기게임</h2>
+    숫자는 1~100사이의 숫자입력 가능
+    <br>
+    <form action="">
+        숫자 : <input type="text" id="user" size="S" />
+        <input type="button" value="확인" onclick="guess();" /> <br>
+        <br>
+        추측횟수 : <input type="" id="guesses" size="S" />
+        힌트 : <input type="text" id="result" size="16" />
+    </form>
+
+
+
+</body></html>

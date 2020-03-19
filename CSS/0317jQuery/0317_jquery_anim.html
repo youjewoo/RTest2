@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+   <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("#apple").animate({left:'100px',opacity:'1.0',
+                        width:'300px',
+                        height:'100px'
+                        },3000);
+    });
+    });
+    </script>
+    <img src="../Image/apple.png" id="apple" style="position: relative" />
+    <br>
+    <button>anim()</button>
+    
+</body>
+</html>

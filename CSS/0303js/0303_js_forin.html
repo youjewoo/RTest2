@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forin</title>
+</head>
+
+<body>
+    <script>
+        var mycar = {
+            make: "Equss",
+            model: "35000",
+            year: 2020
+        };
+
+        var txt = "";
+        for (var x in mycar) {
+            alert(mycar[x]);
+            txt += mycar[x] + "  ";
+            if (mycar[x] == "35000")
+            break;
+        }
+        document.write(txt);
+    </script>
+
+
+</body></html>

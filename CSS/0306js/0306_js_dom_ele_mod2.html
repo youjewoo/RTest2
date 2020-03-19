@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom mod image</title>
+</head>
+
+<body>
+    <img id="image" src="../bshop/Images/2009.jpg" alt="2009">
+    <script>    
+    
+        function changeimg(){
+            var img1=document.getElementById("image");
+        if(img1.src.match("2010")){
+        img1.src="../bshop/Images/2009.jpg";
+        }else
+        img1.src="../bshop/Images/2010.jpg";
+            
+        }
+       
+    </script>
+
+    <input type="button" onclick="changeimg();" value="changimg"  />
+</body></html>

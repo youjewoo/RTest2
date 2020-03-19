@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pseudoclass</title>
+</head>
+<body>
+    <style>
+        p:nth-child(2n+1){
+            color: yellow;
+        }
+        p:nth-child(2n+0){
+            color: blue;
+        }
+    </style>
+    <p>테스트라인1</p>
+    <p>테스트라인2</p>
+    <p>테스트라인3</p>
+    <p>테스트라인4</p>
+    <p>테스트라인5</p>
+<!--    internal style(내부스타일)방법-->
+    <style>
+        table, tr, td {
+            width: 600px;
+            border: 1px solid black;
+            border-bottom: 3px dotted green;
+            margin-top: 50px;
+        }
+        tr:nth-child(2n+0){
+            background-color: aqua;
+            
+        }
+        tr:hover{
+            background-color: gray;
+        }
+    </style>
+    <table>
+        <tr>
+            <td>a</td> <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td> <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td> <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td> <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td> <td>a</td>
+        </tr>
+        
+    </table>
+    
+    
+    
+</body>
+</html>

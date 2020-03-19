@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show hide</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+   <script>
+    $(document).ready(function(){
+//        button을 클릭하면
+    $("button").click(function(){
+//    apple를 보이게 해라
+//        $("#apple").show(); //버튼클릭시 사진을 보이게가ㅓ능
+        $("#apple").toggle(); //버튼클릭시 사진을 보이는것과 재클릭시 없어지는게 가능
+    });    
+    });
+    </script>
+    <button>show it</button>
+    <img id="apple" src="../Image/apple.png" alt="apple" style="display: none">
+    
+</body>
+</html>

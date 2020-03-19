@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchange</title>
+</head>
+<body>
+   <script>
+    function sub(){
+        var x=document.getElementById("name");
+//        x.value=x.value.toLowerCase();
+        x.value=x.value.toLowerCase();
+        
+    }
+    </script>
+   
+    단어입력 :
+    <input type="text" id="name" onchange="sub()">
+    <p>입력필드를 벗어나면 소문자로 변경</p>
+</body>
+</html>

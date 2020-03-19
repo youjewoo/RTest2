@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addclass</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    
+    <script>
+        
+//        addClass-- 입력되지않았던 Class를 추가한다.
+//       
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("#div1").addClass("warning");
+  
+    });
+        $("#removebtn").click(function(){
+          $("#div2").addClass("hello");
+        });
+    });
+    </script>
+    <style>
+        .warning{
+        border: 1px solid red;
+            background-color: yellow;
+            
+        }
+        .hello{
+        border: 5px solid blue;
+            background-color: #5509;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>예제단락</p>
+    </div>
+    <div id="div2">
+        <p>Hello Man</p>
+    </div>
+    <button>addClass()</button>
+    <button id="removebtn">removeClass()</button>
+</body>
+</html>

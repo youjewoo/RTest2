@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg16</title>
+    
+    <script>
+    function regEx(){
+//    alert("신호");
+        var re=/AB*A/g;
+        var str="AA ABA ABBA ABBBA";
+        var newstr=str.match(re);
+        
+        alert(newstr);
+    
+    }
+        
+    </script>
+</head>
+<body>
+    <button onclick="regEx();">click</button>
+</body>
+</html>

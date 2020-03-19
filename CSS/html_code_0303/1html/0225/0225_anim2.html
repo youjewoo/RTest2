@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anim2</title>
+</head>
+<body>
+  <style>
+      #ball{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: red;
+          border-radius: 10px;
+          -webkit-animation-name:bounce;
+          -webkit-animation-iteration-count:infinite;
+          -webkit-animation-duration:5s;
+          
+      }
+      @-webkit-keyframes bounce{
+          from,to{
+              bottom:0px;
+          -webkit-animation-timing-function:ease-out;
+          }
+          50%{
+              bottom: 200px;
+            -webkit-animation-timing-function:ease-in;  
+          }
+      }
+    
+    </style>
+   
+   <div id="ball"></div>
+   
+<!--
+   커스텀 속도효과 중
+   ease-out:움직임이 멈출때 끝에 이르러 속도가 서서히 감소
+   ease-in:천천히 시작
+-->
+    
+</body>
+</html>

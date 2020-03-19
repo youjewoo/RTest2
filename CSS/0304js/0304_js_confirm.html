@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>confirm</title>
+</head>
+<body>
+   <h1>This is Heading</h1>
+   <button onclick="func();">Click</button>
+    <script>
+        //사용자에게 확인 취소를 알려주고 답을 되돌려 받을때
+    var ans=confirm("답변을 전달하세요"); //불린값
+        
+        alert(ans);
+    </script>
+    
+    <script>
+    function func(){
+//    document.write를 호출하면 html문서가 다시 쓰여진다.
+    document.write("결과값이 어떻게 보일까요?");
+    }
+    </script>
+</body>
+</html>

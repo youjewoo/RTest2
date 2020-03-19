@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fadein fadeout</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#fadein").click(function(){
+        $("#apple").fadeIn(3000);
+    });
+        $("#fadeout").click(function(){
+        $("#apple").fadeOut();
+        });
+    });
+    </script>
+</head>
+<body>
+   
+    <button id="fadein">fadeIn</button>
+    <button id="fadeout">fadeOut</button>
+    <img src="../Image/apple.png" id="apple"
+    style="display: none;position: relative">
+    
+</body>
+</html>

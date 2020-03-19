@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>css 조작</title>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <style>
+            div{
+            width: 60px;
+                height: 60px;
+                
+            }
+        </style>
+        <script>
+//            attr()--속성값을 주로 가져옴
+//            css()--선택요소의 스타일 속성을 설정
+       
+           
+        $(document).ready(function(){
+        $("#button1").click(function(){
+        var color=$("#div1").css("background-color");
+//        alert(color);
+            $("#result").text(color);
+        });
+            
+        $("#button2").click(function(){
+       var color2=$("#div1").css("background-color","red");
+       $("#result").text(color2);
+        });
+            $("#button3").click(function(){
+                 obj=$(document).width();
+                wid=$("#div1").width();
+                hei=$("#div1").height();
+                win=$("#div1").width();
+                dclass=$("#div1").addClass("party");
+            
+            $("#result").text(wid+" : "+hei+" : "+win+" : "+dclass+" : "+obj);
+                
+            });
+        });
+        </script>
+    </head>
+    <body>
+    <div id="div1" style="background-color: blue"></div>
+    <button id="button1">css(element)</button>
+    <button id="button2">css(element,style)</button>
+    <button id="button3">css(element,style,addclass)</button>
+    <p id="result">결과표시</p>
+    </body>
+    </html>

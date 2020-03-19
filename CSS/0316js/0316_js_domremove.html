@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>domremove</title>
+</head>
+<body>
+   <script>
+    function removeNode(){
+    var parent=document.getElementById("target");
+        var child=document.getElementById("p1");
+        var child2=document.getElementById("p2");
+        parent.removeChild(child);
+        parent.removeChild(child2);
+    }
+    </script>
+    <div id="target" >
+        <p id="p1">첫번째 단락</p>
+        
+        <p id="p2">두번째 단락</p>
+    
+    </div>
+    <button onclick="removeNode();">클릭하세요!</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg18</title>
+    
+    <script>
+    function regEx(){
+//    alert("신호");
+        var re=/[a-z]\w*/g;
+        var str="A1 B2 c3 d_4 e:5 ffGG77--__--";
+        var newstr=str.match(re);
+        
+        alert(newstr);
+    
+    }
+        
+    </script>
+</head>
+<body>
+    <button onclick="regEx();">click</button>
+</body>
+</html>

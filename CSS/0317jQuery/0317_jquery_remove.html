@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remove</title>
+    <style>
+        p{
+        background-color: yellow;
+            
+        }
+        .container{
+        height: 80px;
+            width: 700px;
+            border: 1px dotted red;
+            
+        }
+    </style>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#button1").click(function(){
+    $(".container").remove();// div가없어짐
+    });
+    $("#button2").click(function(){
+    $(".container").empty(); //p태그만 지워짐
+    });
+    });
+    </script>
+</head>
+<body>
+    <button id="button1">remove()</button>
+    <button id="button2">empty()</button>
+    <div class="container">
+        <p class="hello">Hello</p>
+        <p class="goodbye">GoodBye</p>
+        
+    </div>
+    
+    
+</body>
+</html>
